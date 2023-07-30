@@ -2,10 +2,19 @@
     box-sizing: border-box;
 }
 
+.header {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+    width: 100%;
+    height: 150px;
+}
+
 .row::after {
     content: '';
     clear: both;
     display: table;
+
 }
 
 [class*="col-"] {
@@ -15,12 +24,6 @@
 
 html {
     font-family: "Lucida Sans", sans-serif;
-}
-
-.header {
-    background-color: #9933cc;
-    color: #ffffff;
-    padding: 15px;
 }
 
 .menu ul {
@@ -54,12 +57,11 @@ html {
     background-color: #0099cc;
     color: #ffffff;
     text-align: center;
-    padding: 15px;
     font-size: 12px;
+    padding: 15px;
 }
 
-/* for mobile phones */
-[class*="col-"] {
+[class*=col-] {
     width: 100%;
 }
 
@@ -79,7 +81,7 @@ html {
     .col-s-4 {
         width: 33.33%;
     }
- 
+
     .col-s-5 {
         width: 41.66%;
     }
@@ -113,7 +115,7 @@ html {
     }
 }
 
-@media only screen and(min-width:768px) {
+@media only screen and (min-width:768px) {
     .col-1 {
         width: 8.33%;
     }
